@@ -1,749 +1,945 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="_css/style.css">
-	<title>Sobre HTML5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Sobre HTML5</title>
 </head>
+
+<!-- ------------------------------ -->
+
 <body>
 
+    <!-- INICIO DO HEADER (PAINEL SUPERIOR) -->
     <header>
-        <h1>HEADER</h1> <!--Início do HEADER-->
 
-<pre class="header" id="html">
-    <code>
+        <h1>HEADER</h1>
+
+        <div id="header_content">
+            <pre>
+                <code>
 HTML CODE
 &lt;header&gt;
     &lt;h1&gt;HEADER&lt;/h1&gt;
-    &lt;h2&gt;CODE HTML5 (with Codes)&lt;/h2&gt;
+    &lt;div id="header_content"&gt;
+        &lt;h2&gt;CODE HTML5 (with Codes)&lt;/h2&gt;
+    &lt;/div&gt;
 &lt;/header&gt;
-    </code>
-</pre>
-
-<pre class="header" id="css">
-    <code>
+                </code>
+            </pre>
+            <h2>Sobre HTML5 / CSS3<br>(with Codes)</h2>
+            <pre>
+                <code>
 CSS CODE
 header {
-    color: #fff;
-    text-align: left;
-    padding: auto;
-    width: 100%;
     background-color: rgba(0, 0, 255, 0.5);
+    padding: 20px;
+    border: 5px solid #000;
 }
-    </code>
-</pre>
 
-        <h2 class="header">CODE HTML5 (with Codes)</h2>
+#header_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+#header_content pre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 450px;
+}
+
+#header_content code {
+    text-align: justify;
+}
+                </code>
+            </pre>
+        </div>
+
     </header>
-    
+    <!-- FIM DO HEADER (PAINEL SUPERIOR) -->
+
+    <!-- ------------------------------ -->
+
+    <!-- INICIO DO NAV (PAINEL ESQUERDO) -->
     <nav>
-        <h1>NAV</h1> <!--Início do NAV-->
-<div class="painel1">
-<pre class="nav" id="html1">
-    <code>
+
+        <h1>NAV</h1>
+
+        <div class="painel01">
+            <pre>
+                <code>
 HTML CODE
 &lt;nav&gt;
     &lt;h1&gt;NAV&lt;/h1&gt;
+    &lt;h1&gt;/NAV&lt;/h1&gt;
 &lt;/nav&gt;
-    </code>
-</pre>
+                </code>
+            </pre>
 
-<pre class="nav" id="css1">
-    <code>
+            <pre>
+                <code>
 CSS CODE
 nav {
-    color: #fff;
-    text-align: left;
-    padding: auto;
-    height: 400px;
     background-color: rgba(255, 0, 0, 0.5);
+    padding: 20px;
+    border: 5px solid #000;
     float: left;
-    width: 25%;
+    width: 30%;
 }
-    </code>
-</pre>
-</div>
+                </code>
+            </pre>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel2">
-<pre class="nav" id="html2">
-    <code>
+        <div class="painel02">
+            <pre>
+                <code>
 HTML CODE
-&lt;h1&gt;Títulos e Marcação&lt;/h1&gt;
-&lt;h2&gt;Títulos e Marcação&lt;/h2&gt;
-&lt;h3&gt;Títulos e Marcação&lt;/h3&gt;
-&lt;h4&gt;Títulos e Marcação&lt;/h4&gt;
-&lt;h5&gt;Títulos e Marcação&lt;/h5&gt;
-&lt;h6&gt;Títulos e Marcação&lt;/h6&gt;
-    </code>
-</pre>
-</div>
+&lt;div class="painel02"&gt;
+    &lt;h1&gt;Títulos e Marcação&lt;/h1&gt;
+    &lt;h2&gt;Títulos e Marcação&lt;/h2&gt;
+    &lt;h3&gt;Títulos e Marcação&lt;/h3&gt;
+    &lt;h4&gt;Títulos e Marcação&lt;/h4&gt;
+    &lt;h5&gt;Títulos e Marcação&lt;/h5&gt;
+    &lt;h6&gt;Títulos e Marcação&lt;/h6&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel3">
-<pre class="nav" id="html3">
-    <code>
+        <div class="painel03">
+            <pre>
+                <code>
 HTML CODE
-&lt;h2 class="listas"&gt;Lista NÃO ORDENADA (DISC)&lt;/h3&gt;
-&lt;ul type="disc"&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-    &lt;li&gt;Item 3&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class="painel03"&gt;
+    &lt;h2&gt;Lista NÃO ORDENADA (DISC)&lt;/h2&gt;
+    &lt;ul id="list_disc"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ul&gt;
 
-&lt;h2 class="listas"&gt;Lista NÃO ORDENADA (CIRCLE)&lt;/h3&gt;
-&lt;ul type="circle"&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-    &lt;li&gt;Item 3&lt;/li&gt;
-&lt;/ul&gt;
+    &lt;h2&gt;Lista NÃO ORDENADA (CIRCLE)&lt;/h2&gt;
+    &lt;ul id="list_circle"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ul&gt;
 
-&lt;h2 class="listas"&gt;Lista NÃO ORDENADA (SQUARE)&lt;/h3&gt;
-&lt;ul type="square"&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-    &lt;li&gt;Item 3&lt;/li&gt;
-&lt;/ul&gt;
-    </code>
-</pre>
-</div>
+    &lt;h2&gt;Lista NÃO ORDENADA (SQUARE)&lt;/h2&gt;
+    &lt;ul id="list_square"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel4">
-<pre class="nav" id="html4">
-    <code>
+        <div class="painel04">
+            <pre>
+                <code>
 HTML CODE
-    &lt;h2 class="titulos"&gt;Lista ORDENADA (Type="1")&lt;/h2&gt;
-&lt;ol type="1"&gt;
-    &lt;li>Item 1&lt;/li&gt;
-    &lt;li>Item 2&lt;/li&gt;
-    &lt;li>Item 3&lt;/li&gt;
-&lt;/ol&gt;
+&lt;div class="painel04"&gt;
+    &lt;h2&gt;Lista ORDENADA (Type="1")&lt;/h2&gt;
+    &lt;ol type="1" id="list_type_1"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ol&gt;
 
-    &lt;h2 class="titulos"&gt;Lista ORDENADA (Type="A")&lt;/h2&gt;
-&lt;ol type="A"&gt;
-    &lt;li>Item 1&lt;/li&gt;
-    &lt;li>Item 2&lt;/li&gt;
-    &lt;li>Item 3&lt;/li&gt;
-&lt;/ol&gt;
+    &lt;h2&gt;Lista ORDENADA (Type="A")&lt;/h2&gt;
+    &lt;ol type="A" id="list_type_a_uc"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ol&gt;
 
-    &lt;h2 class="titulos"&gt;Lista ORDENADA (Type="a")&lt;/h2&gt;
-&lt;ol type="a"&gt;
-    &lt;li>Item 1&lt;/li&gt;
-    &lt;li>Item 2&lt;/li&gt;
-    &lt;li>Item 3&lt;/li&gt;
-&lt;/ol&gt;
+    &lt;h2&gt;Lista ORDENADA (Type="a")&lt;/h2&gt;
+    &lt;ol type="a" id="list_type_a_dc"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ol&gt;
 
-    &lt;h2 class="titulos"&gt;Lista ORDENADA (Type="I")&lt;/h2&gt;
-&lt;ol type="I"&gt;
-    &lt;li>Item 1&lt;/li&gt;
-    &lt;li>Item 2&lt;/li&gt;
-    &lt;li>Item 3&lt;/li&gt;
-&lt;/ol&gt;
+    &lt;h2&gt;Lista ORDENADA (Type="I")&lt;/h2&gt;
+    &lt;ol type="I" id="list_type_i_uc"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ol&gt;
 
-    &lt;h2 class="titulos"&gt;Lista ORDENADA (Type="i")&lt;/h2&gt;
-&lt;ol type="i"&gt;
-    &lt;li>Item 1&lt;/li&gt;
-    &lt;li>Item 2&lt;/li&gt;
-    &lt;li>Item 3&lt;/li&gt;
-&lt;/ol&gt;
-    </code>
-</pre>
-</div>
+    &lt;h2&gt;Lista ORDENADA (Type="i")&lt;/h2&gt;
+    &lt;ol type="i" id="list_type_i_dc"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel5">
-<pre class="nav" id="html5">
-    <code>
+        <div class="painel05">
+            <pre>
+                <code>
 HTML CODE
-    &lt;h2 class="titulos"&gt;Tabelas&lt;/h2&gt;
-&lt;table&gt;
-    &lt;tr&gt;
-        &lt;td class="letra"&gt;&lt;/td&gt;
-        &lt;td class="letra"&gt;A&lt;/td&gt;
-        &lt;td class="letra"&gt;B&lt;/td&gt;
-        &lt;td class="letra"&gt;C&lt;/td&gt;
-        &lt;td class="letra"&gt;D&lt;/td&gt;
-        &lt;td class="letra"&gt;E&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td class="num"&gt;1&lt;/td&gt;
-        &lt;td&gt;A1&lt;/td&gt;
-        &lt;td&gt;B1&lt;/td&gt;
-        &lt;td&gt;C1&lt;/td&gt;
-        &lt;td&gt;D1&lt;/td&gt;
-        &lt;td&gt;E1&lt;/td&gt;
-    &lt;/tr>&gt;
-    &lt;tr&gt;
-        &lt;td class="num"&gt;2&lt;/td&gt;
-        &lt;td&gt;A2&lt;/td&gt;
-        &lt;td&gt;B2&lt;/td&gt;
-        &lt;td&gt;C2&lt;/td&gt;
-        &lt;td&gt;D2&lt;/td&gt;
-        &lt;td&gt;E2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td class="num"&gt;3&lt;/td&gt;
-        &lt;td&gt;A3&lt;/td&gt;
-        &lt;td&gt;B3&lt;/td&gt;
-        &lt;td&gt;C3&lt;/td&gt;
-        &lt;td&gt;D3&lt;/td&gt;
-        &lt;td&gt;E3&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-    </code>
-</pre>
-</div>
+&lt;div class="painel05"&gt;
 
-<hr>
+    &lt;h2&gt;Tabelas&lt;/h2&gt;
 
-<div class="painel6">
-<pre class="nav" id="html6">
-    <code>
+    &lt;table&gt;
+        &lt;tr id="table_letter"&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;A&lt;/td&gt;
+            &lt;td&gt;B&lt;/td&gt;
+            &lt;td&gt;C&lt;/td&gt;
+            &lt;td&gt;D&lt;/td&gt;
+            &lt;td&gt;E&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="table_number"&gt;1&lt;/td&gt;
+            &lt;td&gt;A1&lt;/td&gt;
+            &lt;td&gt;B1&lt;/td&gt;
+            &lt;td&gt;C1&lt;/td&gt;
+            &lt;td&gt;D1&lt;/td&gt;
+            &lt;td&gt;E1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="table_number"&gt;2&lt;/td&gt;
+            &lt;td&gt;A2&lt;/td&gt;
+            &lt;td&gt;B2&lt;/td&gt;
+            &lt;td&gt;C2&lt;/td&gt;
+            &lt;td&gt;D2&lt;/td&gt;
+            &lt;td&gt;E2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="table_number"&gt;3&lt;/td&gt;
+            &lt;td&gt;A3&lt;/td&gt;
+            &lt;td&gt;B3&lt;/td&gt;
+            &lt;td&gt;C3&lt;/td&gt;
+            &lt;td&gt;D3&lt;/td&gt;
+            &lt;td&gt;E3&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+        </div>
+
+        <hr>
+
+        <div class="painel06">
+            <pre>
+                <code>
 HTML CODE
-&lt;h2 class="titulos"&gt;Importando Imagens 
-(Com Legendas)&lt;/h2&gt;
-&lt;figure&gt;
-    &lt;img src="_images/html5 512x512.png" 
-    alt="Logo HTML5"&gt;
-    &lt;figcaption>
-        &lt;p class="figcaption">Logo HTML5&lt;/p&gt;
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;div class="painel06"&gt;
+    &lt;h2&gt;Importando Imagens (Com Legendas)&lt;/h2&gt;
 
-&lt;figure&gt;
-    &lt;img src="_images/css3 512x512.jpg" 
-    alt="Logo CSS3"&gt;
-    &lt;figcaption&gt;
-        &lt;p class="figcaption">Logo CSS3&lt;/p&gt;
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
+    &lt;div id="figures"&gt;
+        &lt;figure&gt;
+            &lt;img src="images/html5.png" alt="Logo HTML5"&gt;
+            &lt;figcaption&gt;
+                &lt;p&gt;Logo&lt;br&gt;HTML5&lt;/p&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;figure&gt;
+            &lt;img src="images/css3.png" alt="Logo CSS3"&gt;
+            &lt;figcaption&gt;
+                &lt;p&gt;Logo&lt;br&gt;CSS3&lt;/p&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;figure&gt;
+            &lt;img src="images/javascript.png" alt="Logo JavaScript"&gt;
+            &lt;figcaption&gt;
+                &lt;p&gt;Logo&lt;br&gt;JavaScript&lt;/p&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;figure&gt;
+            &lt;img src="images/world_wide_web.png" alt="Logo World Wide Web"&gt;
+            &lt;figcaption&gt;
+                &lt;p&gt;Logo&lt;br&gt;World Wide Web&lt;/p&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+        </div>
 
-&lt;figure&gt;
-    &lt;img src="_images/javaScript 512x512.jpg" 
-    alt="Logo JavaScript"&gt;
-    &lt;figcaption&gt;
-        &lt;p class="figcaption"&gt;Logo JavaScript&lt;/p&gt;
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
+        <hr>
 
-&lt;figure&gt;
-    &lt;img src="_images/www 360x360.png" 
-    alt="Logo World Wide Web"&gt;
-    &lt;figcaption&gt;
-        &lt;p class="figcaption"&gt;Logo World Wide Web&lt;/p&gt;
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
-    </code>
-</pre>
-</div>
-
-<hr>
-
-<div class="painel7">
-<pre class="nav" id="html7">
-    <code>
+        <div class="painel07">
+            <pre>
+                <code>
 HTML CODE
-&lt;h2 class="titulos"&gt;Importando Vídeo (Local)&lt;/h2&gt;
-&lt;video src="_videos/foxpreview.mp4" controls&gt;&lt;/video&gt;
-    </code>
-</pre>
-</div>
+&lt;div class="painel07"&gt;
+    &lt;h2&gt;Importando Vídeo (Local)&lt;/h2&gt;
+    &lt;video src="video/foxpreview.mp4" controls&gt;&lt;/video&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel8">
-<pre class="nav" id="html8">
-    <code>
+        <div class="painel08">
+            <pre>
+                <code>
 HTML CODE
-&lt;h2 class="titulos"&gt;Importando Vídeo (Iframe)&lt;/h2&gt;
-&lt;iframe width="504" height="498" 
-src="https://www.youtube.com/embed/3T3ofoKfEoY" 
-title="NIGHT RUNNING" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; 
-encrypted-media; gyroscope; picture-in-picture; 
-web-share" allowfullscreen&gt;&lt;/iframe&gt;
-    </code>
-</pre>
-</div>
+&lt;div class="painel08"&gt;
+    &lt;h2&gt;Importando Vídeo (Iframe)&lt;/h2&gt;
+    &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/3T3ofoKfEoY?si=RMvGIFIFX07dVqtp"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel9">
-<pre class="nav" id="html9">
-    <code>
+        <div class="painel09">
+            <pre>
+                <code>
 HTML CODE
-&lt;h2 class="titulos"&gt;Importando Áudio (with Cover)&lt;/h2&gt;
-&lt;figure class="cover"&gt;
-    &lt;audio src="_musics/VHSテープリワインダー
-     - come over.mp3" controls&gt;&lt;/audio&gt;
-    &lt;img src="_images/VHSTape2.png" 
-    alt="Logo VHSテープリワインダー"&gt;
-    &lt;figcaption&gt;
-        &lt;p class="cover">Logo VHSテープリワインダー&lt;/p&gt;
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;div class="painel09"&gt;
+    &lt;h2&gt;Importando Áudio (with Cover)&lt;/h2&gt;
 
-    </code>
-</pre>
-</div>
+    &lt;figure id="cover"&gt;
+        &lt;audio src="music/VHSテープリワインダー - come over.mp3" controls&gt;&lt;/audio&gt;
+        &lt;img src="images/vhs_tape2.png" alt="Logo VHSテープリワインダー"&gt;
+        &lt;figcaption&gt;
+            &lt;p&gt;Logo VHSテープリワインダー&lt;/p&gt;
+        &lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+        </div>
 
-<h1>/NAV</h1>
+        <h1>/NAV</h1>
 
     </nav>
+    <!-- FIM DO NAV (PAINEL ESQUERDO) -->
 
+
+    <!-- ------------------------------ -->
+
+
+    <!-- INICIO DA SECTION (PAINEL CENTRAL) -->
     <section>
-        <h1>SECTION</h1> <!--Início do SECTION-->
+        <h1>SECTION</h1>
 
-<div class="painel1">
-<pre class="section" id="html1">
-    <code>
+        <div class="painel01">
+            <pre>
+                <code>
 HTML CODE
 &lt;section&gt;
     &lt;h1&gt;SECTION&lt;/h1&gt;
+    &lt;h1&gt;/SECTION&lt;/h1&gt;
 &lt;/section&gt;
-    </code>
-</pre>
+                </code>
+            </pre>
 
-<pre class="section" id="css1">
-    <code>
+            <pre>
+                <code>
 CSS CODE
 section {
-    color: #fff;
-    text-align: left;
-    padding: auto;
-    height: 400px;
     background-color: rgba(255, 217, 0, 0.5);
+    padding: 20px;
+    border: 5px solid #000;
     float: left;
-    width: 45%;
+    width: 40%;
 }
-    </code>
-</pre>
-</div>
+                </code>
+            </pre>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel2" id="titulos">
-    <h1>Títulos e Marcação</h1>
-    <h2>Títulos e Marcação</h2>
-    <h3>Títulos e Marcação</h3>
-    <h4>Títulos e Marcação</h4>
-    <h5>Títulos e Marcação</h5>
-    <h6>Títulos e Marcação</h6>
-</div>
+        <div class="painel02">
+            <h1>Títulos e Marcação</h1>
+            <h2>Títulos e Marcação</h2>
+            <h3>Títulos e Marcação</h3>
+            <h4>Títulos e Marcação</h4>
+            <h5>Títulos e Marcação</h5>
+            <h6>Títulos e Marcação</h6>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel3">
-    <h2 class="titulos">Lista NÃO ORDENADA (DISC)</h2>
-    <ul type="disc">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
+        <div class="painel03">
+            <h2>Lista NÃO ORDENADA (DISC)</h2>
+            <ul id="list_disc">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
 
-    <h2 class="titulos">Lista NÃO ORDENADA (CIRCLE)</h2>
-    <ul type="circle">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
+            <h2>Lista NÃO ORDENADA (CIRCLE)</h2>
+            <ul id="list_circle">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
 
-    <h2 class="titulos">Lista NÃO ORDENADA (SQUARE)</h2>
-    <ul type="square">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
-</div>
+            <h2>Lista NÃO ORDENADA (SQUARE)</h2>
+            <ul id="list_square">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel4">
-    <h2 class="titulos">Lista ORDENADA (Type="1")</h2>
-    <ol type="1">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
+        <div class="painel04">
+            <h2>Lista ORDENADA (Type="1")</h2>
+            <ol type="1" id="list_type_1">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
 
-    <h2 class="titulos">Lista ORDENADA (Type="A")</h2>
-    <ol type="A">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
+            <h2>Lista ORDENADA (Type="A")</h2>
+            <ol type="A" id="list_type_a_uc">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
 
-    <h2 class="titulos">Lista ORDENADA (Type="a")</h2>
-    <ol type="a">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
+            <h2>Lista ORDENADA (Type="a")</h2>
+            <ol type="a" id="list_type_a_dc">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
 
-    <h2 class="titulos">Lista ORDENADA (Type="I")</h2>
-    <ol type="I">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
+            <h2>Lista ORDENADA (Type="I")</h2>
+            <ol type="I" id="list_type_i_uc">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
 
-    <h2 class="titulos">Lista ORDENADA (Type="i")</h2>
-    <ol type="i">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
-</div>
+            <h2>Lista ORDENADA (Type="i")</h2>
+            <ol type="i" id="list_type_i_dc">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel5">
+        <div class="painel05">
 
-    <h2 class="titulos">Tabelas</h2>
+            <h2>Tabelas</h2>
 
-    <table>
-        <tr>
-            <td class="letra"></td>
-            <td class="letra">A</td>
-            <td class="letra">B</td>
-            <td class="letra">C</td>
-            <td class="letra">D</td>
-            <td class="letra">E</td>
-        </tr>
-        <tr>
-            <td class="num">1</td>
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-            <td>D1</td>
-            <td>E1</td>
-        </tr>
-        <tr>
-            <td class="num">2</td>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-            <td>D2</td>
-            <td>E2</td>
-        </tr>
-        <tr>
-            <td class="num">3</td>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-            <td>D3</td>
-            <td>E3</td>
-        </tr>
-    </table>
-</div>
+            <table>
+                <tr id="table_letter">
+                    <td></td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td class="table_number">1</td>
+                    <td>A1</td>
+                    <td>B1</td>
+                    <td>C1</td>
+                    <td>D1</td>
+                    <td>E1</td>
+                </tr>
+                <tr>
+                    <td class="table_number">2</td>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                    <td>D2</td>
+                    <td>E2</td>
+                </tr>
+                <tr>
+                    <td class="table_number">3</td>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                    <td>D3</td>
+                    <td>E3</td>
+                </tr>
+            </table>
+        </div>
 
-<hr>
+        <hr>
 
-<div class=" painel6">
-    <h2 class="titulos">Importando Imagens (Com Legendas)</h2>
+        <div class="painel06">
+            <h2>Importando Imagens (Com Legendas)</h2>
 
-    <figure>
-        <img src="_images/html5 512x512.png" alt="Logo HTML5">
-        <figcaption>
-            <p class="figcaption">Logo HTML5</p>
-        </figcaption>
-    </figure>
+            <div id="figures">
+                <figure>
+                    <img src="images/html5.png" alt="Logo HTML5">
+                    <figcaption>
+                        <p>Logo<br>HTML5</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/css3.png" alt="Logo CSS3">
+                    <figcaption>
+                        <p>Logo<br>CSS3</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/javascript.png" alt="Logo JavaScript">
+                    <figcaption>
+                        <p>Logo<br>JavaScript</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/world_wide_web.png" alt="Logo World Wide Web">
+                    <figcaption>
+                        <p>Logo<br>World Wide Web</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
 
-    <figure>
-        <img src="_images/css3 512x512.jpg" alt="Logo CSS3">
-        <figcaption>
-            <p class="figcaption">Logo CSS3</p>
-        </figcaption>
-    </figure>
+        <hr>
 
-    <figure>
-        <img src="_images/javaScript 512x512.jpg" alt="Logo JavaScript">
-        <figcaption>
-            <p class="figcaption">Logo JavaScript</p>
-        </figcaption>
-    </figure>
+        <div class="painel07">
+            <h2>Importando Vídeo (Local)</h2>
+            <video src="video/foxpreview.mp4" controls></video>
+        </div>
 
-    <figure>
-        <img src="_images/www 360x360.png" alt="Logo World Wide Web">
-        <figcaption>
-            <p class="figcaption">Logo World Wide Web</p>
-        </figcaption>
-    </figure>
-</div>
+        <hr>
 
-<hr>
+        <div class="painel08">
+            <h2>Importando Vídeo (Iframe)</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3T3ofoKfEoY?si=RMvGIFIFX07dVqtp"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
 
-<div class="painel7">
-    <h2 class="titulos">Importando Vídeo (Local)</h2>
-    <video src="_videos/foxpreview.mp4" controls></video>
-</div>
+        <hr>
 
-<hr>
+        <div class="painel09">
+            <h2>Importando Áudio (with Cover)</h2>
 
-<div class="painel8">
-    <h2 class="titulos">Importando Vídeo (Iframe)</h2>
-    <iframe width="504" height="498" src="https://www.youtube.com/embed/3T3ofoKfEoY" title="NIGHT RUNNING" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+            <figure id="cover">
+                <audio src="music/VHSテープリワインダー - come over.mp3" controls></audio>
+                <img src="images/vhs_tape2.png" alt="Logo VHSテープリワインダー">
+                <figcaption>
+                    <p>Logo VHSテープリワインダー</p>
+                </figcaption>
+            </figure>
+        </div>
 
-<hr>
-
-<div class="painel9">
-    <h2 class="titulos">Importando Áudio (with Cover)</h2>
-
-    <figure class="cover">
-        <audio src="_musics/VHSテープリワインダー - come over.mp3" controls></audio>
-        <img src="_images/VHSTape2.png" alt="Logo VHSテープリワインダー">
-        <figcaption>
-            <p class="cover">Logo VHSテープリワインダー</p>
-        </figcaption>
-    </figure>
-</div>
-
-<h1>/SECTION</h1>
+        <h1>/SECTION</h1>
 
     </section>
 
     <aside>
         <h1>ASIDE</h1> <!--Início do ASIDE-->
 
-<div class="painel1">
-<pre class="aside" id="html1">
-    <code>
+        <div class="painel01">
+            <pre>
+                <code>
 HTML5 CODE
 &lt;aside&gt;
     &lt;h1&gt;ASIDE&lt;/h1&gt;
+    &lt;h1&gt;/ASIDE&lt;/h1&gt;
 &lt;/aside&gt;
-    </code>
-</pre>
+                </code>
+            </pre>
 
-<pre class="aside" id="css1">
-    <code>
+            <pre>
+                <code>
 CSS CODE
 aside {
-    color: #fff;
-    text-align: left;
-    padding: auto;
-    height: 400px;
     background-color: rgba(255, 0, 255, 0.5);
+    padding: 20px;
+    border: 5px solid #000;
     float: left;
     width: 30%;
 }
-    </code>
-</pre>
-</div>
+                </code>
+            </pre>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel2">
-<pre class="aside" id="css2">
-    <code>
+        <div class="painel02">
+            <pre>
+             <code>
 CSS CODE
-h1, h2, h3, h4, h5, h6 {
-font-family: 'Bookman Old Style';
-text-shadow: 2px 2px 2px #000;
+.painel02 {
+    align-content: center;
+    margin: 20px 10px;
+    border: 5px dashed #000;
+    height: 1000px;
 }
-    </code>
-</pre>
-</div>
 
-<hr>
+.painel02>h1 {
+    font-size: 3.5rem;
+}
 
-<div class="painel3">
-<pre class="aside" id="css3">
-    <code>
+.painel02>h2 {
+    font-size: 3rem;
+}
+
+.painel02>h3 {
+    font-size: 2.5rem;
+}
+
+.painel02>h4 {
+    font-size: 2rem;
+}
+
+.painel02>h5 {
+    font-size: 1.5rem;
+}
+
+.painel02>h6 {
+    font-size: 1rem;
+}
+                </code>
+            </pre>
+        </div>
+
+        <hr>
+
+        <div class="painel03">
+            <pre>
+                <code>
 CSS CODE
-h2.titulos {
-    text-align: center;
+.painel03 {
+    align-content: center;
+    margin: 20px 10px;
+    border: 5px dashed #000;
+    height: 1000px;
 }
 
-ul {
-    padding-left: 45%;
+#list_disc {
+    list-style-type: disc;
 }
 
-li {
-    color: #000;
+#list_circle {
+    list-style-type: circle;
 }
-    </code>
-</pre>
-</div>
 
-<hr>
+#list_square {
+    list-style-type: square;
+}
 
-<div class="painel4">
-<pre class="aside" id="css4">
-    <code>
+/* painel04 - list ol li 1AaIi*/
+#list_type_1 {
+    list-style-type: decimal;
+}
+
+#list_type_a_uc {
+    list-style-type: upper-alpha;
+}
+
+#list_type_a_dc {
+    list-style-type: lower-alpha;
+}
+
+#list_type_i_uc {
+    list-style-type: upper-roman;
+}
+
+#list_type_i_dc {
+    list-style-type: lower-roman;
+}
+                </code>
+            </pre>
+        </div>
+
+        <hr>
+
+        <div class="painel04">
+            <pre>
+                <code>
 CSS CODE
-h2.titulos {
-    text-align: center;
+.painel04 {
+    align-content: center;
+    margin: 20px 10px;
+    border: 5px dashed #000;
+    height: 1000px;
 }
 
-ol {
-    padding-left: 45%;
+#list_type_1 {
+    list-style-type: decimal;
 }
 
-li {
-    color: #000;
+#list_type_a_uc {
+    list-style-type: upper-alpha;
 }
-    </code>
-</pre>
-</div>
 
-<hr>
+#list_type_a_dc {
+    list-style-type: lower-alpha;
+}
 
-<div class="painel5">
-<pre class="aside" id="css5">
-    <code>
-table {
+#list_type_i_uc {
+    list-style-type: upper-roman;
+}
+
+#list_type_i_dc {
+    list-style-type: lower-roman;
+}
+                </code>
+            </pre>
+        </div>
+
+        <hr>
+
+        <div class="painel05">
+            <pre>
+                <code>
+.painel05 {
+    align-content: center;
+    margin: 20px 10px;
+    border: 5px dashed #000;
+    height: 1000px;
+}
+
+.painel05>h2 {
+    padding: 50px 0px;
+}
+
+table,
+tr,
+td {
+    margin: auto;
+    font-size: 3rem;
     border: 1px solid #000;
     border-collapse: collapse;
-    margin: auto;
-    margin-bottom: 10px;
-    color: #000;
 }
 
 td {
-    border: 1px solid #000;
-    padding: 24px;
-    text-align: center;
-    font-size: 40px;
+    padding: 20px;
 }
 
-td.letra {
+#table_letter {
     color: #00f;
 }
 
-td.num {
+.table_number {
     color: #f00;
 }
-    </code>
-</pre>
-</div>
+                </code>
+            </pre>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel6">
-<pre class="aside" id="css6">
-    <code>
+        <div class="painel06">
+            <pre>
+                <code>
 CSS CODE
-figure {
-    transform: translate(35%, 0px);
-    margin: 10px 10px 20px 10px;
-    width: 200px;
-    height: 200px;
-    display: inline-flex;
-    border: dashed;
+.painel06 {
+    align-content: center;
+    margin: 20px 10px;
+    border: 5px dashed #000;
+    height: 1000px;
 }
 
-figcaption {
+.painel06>h2 {
+    padding: 50px 0px;
+}
+
+#figures {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px 80px;
+    justify-content: center;
+}
+
+#figures img {
+    width: 200px;
+    border: 3px dashed #000;
+}
+
+#figures p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
     text-align: center;
-    color: #000;
-    transform: translate(-200px, 186px);
 }
+                </code>
+            </pre>
+        </div>
 
-p.figcaption {
-    font-style: italic;
-    width: 200px;
-}
-    </code>
-</pre>
-</div>
+        <hr>
 
-<hr>
-
-<div class="painel7">
-<pre class="aside" id="css7">
-    <code>
+        <div class="painel07">
+            <pre>
+                <code>
 CSS CODE
+.painel07 {
+    align-content: center;
+    margin: 20px 10px;
+    border: 5px dashed #000;
+    height: 1000px;
+}
+
+.painel07>h2 {
+    padding: 50px 0px;
+}
+
 video {
     display: block;
+    width: 80%;
     margin: auto;
-    margin-bottom: 20px;
-    width: 90%;
 }
-    </code>
-</pre>
-</div>
+                </code>
+            </pre>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel8">
-<pre class="aside" id="css8">
-    <code>
+        <div class="painel08">
+            <pre>
+                <code>
 CSS CODE
+.painel08 {
+    align-content: center;
+    margin: 20px 10px;
+    border: 5px dashed #000;
+    height: 1000px;
+}
+
+.painel08>h2 {
+    padding: 50px 0px;
+}
+
 iframe {
     display: block;
+    height: 500px;
+    width: 500px;
     margin: auto;
-    margin-bottom: 20px;
 }
-    </code>
-</pre>
-</div>
+                </code>
+            </pre>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="painel9">
-<pre class="aside" id="css9">
-    <code>
+        <div class="painel09">
+            <pre>
+                <code>
 CSS CODE
-audio {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 25%);
+.painel09 {
+    align-content: center;
+    margin: 20px 10px;
+    border: 5px dashed #000;
+    height: 1000px;
 }
 
-figure.cover {
-    box-shadow: 3px 3px 6px #f00;
-    width: 400px;
+.painel09>h2 {
+    padding: 50px 0px;
+}
+
+.painel09 figure {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    border: 3px dashed #000;
+    box-shadow: 5px 5px 5px #f00;
+    padding: 50px;
+    width: fit-content;
+}
+
+#cover img {
     height: 400px;
-    transform: translateX(20%)
 }
 
-p.cover {
-    font-style: italic;
-    width: 220px;
-    color: #000;
-    transform: translate(-100px, 155px);
+#cover p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-align: center;
 }
-    </code>
-</pre>
-</div>
+                </code>
+            </pre>
+        </div>
 
-<h1>/ASIDE</h1>
+        <h1>/ASIDE</h1>
 
     </aside>
 
-    <footer>
-        <h1>FOOTER</h1> <!--Início do FOOTER-->
+    <!-- ------------------------------ -->
 
-<pre class="footer" id="html">
-    <code>
+    <!-- INICIO DO FOOTER (PAINEL INFERIOR) -->
+    <footer>
+        <h1>FOOTER</h1>
+
+        <div id="footer_content">
+            <pre>
+                <code>
 HTML CODE
-&lt;&gt;
 &lt;footer&gt;
     &lt;h1&gt;FOOTER&lt;/h1&gt;
+    &lt;div id="footer_content"&gt;
+        &lt;h2&gt;CODE HTML5 (with Codes)&lt;/h2&gt;
+    &lt;/div&gt;
 &lt;/footer&gt;
-    </code>
-</pre>
-
-<pre class="footer" id="css">
-    <code>
+                </code>
+            </pre>
+            <h2>Sobre HTML5 / CSS3<br>(with Codes)</h2>
+            <pre>
+                <code>
+CSS CODE
 footer {
-    color: #fff;
-    text-align: left;
-    padding: auto;
-    width: 100%;
     background-color: rgba(0, 136, 0, 0.5);
+    width: 100%;
     float: left;
+    padding: 20px;
+    border: 5px solid #000;
 }
-    </code>
-</pre>
+
+#footer_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+#footer_content pre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 450px;
+}
+
+#footer_content code {
+    text-align: justify;
+}
+                </code>
+            </pre>
+        </div>
 
     </footer>
+    <!-- FIM DO FOOTER (PAINEL INFERIOR) -->
+
 </body>
+
 </html>
