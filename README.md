@@ -15,6 +15,11 @@ A primeira versão cumpriu o objetivo principal de estruturar os painéis de lay
   * Uso excessivo de posicionamentos manuais complexos (`transforms` e `floats`) para alinhar os blocos de código (`<pre>`).
   * Manutenibilidade mais difícil do layout em telas diferentes.
 
+<p align="center">
+  <img src="readme/sobre_html_v1.0_1.png" width="45%" alt="Versão 1.0" />
+  <img src="readme/sobre_html_v1.0_2.png" width="45%" alt="Versão 1.0" />
+</p>
+
 ### ✨ v2.0 (Versão Atual / Refatorada)
 Nesta nova versão, o projeto passou por uma reestruturação profunda do layout, código limpo e padronização do CSS para melhorar drasticamente a experiência visual e a semântica.
 * **Principais Melhorias e Evoluções:**
@@ -22,6 +27,11 @@ Nesta nova versão, o projeto passou por uma reestruturação profunda do layout
   * **Organização do Código CSS:** Modularização dos seletores, padronização de tipografia (`Bookman Old Style` e `Courier New`) e uso mais eficiente de caixas de sombra (`box-shadow`) e bordas tracejadas.
   * **Otimização dos Blocos de Código (`<pre>` / `<code>`):** Reorganização das caixas de código para que acompanhem a estrutura visual dos blocos de navegação sem quebrar o design responsivo.
   * **Correção de Semântica e Sintaxe:** Padronização correta de atributos de listas ordenadas/não ordenadas, tabelas e mídias locais e via *iframe*.
+
+<p align="center">
+  <img src="readme/sobre_html_v1.0_1.png" width="45%" alt="Versão 2.0" />
+  <img src="readme/sobre_html_v1.0_2.png" width="45%" alt="Versão 2.0" />
+</p>
 
 ---
 
