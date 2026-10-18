@@ -29,8 +29,8 @@ Nesta nova versão, o projeto passou por uma reestruturação profunda do layout
   * **Correção de Semântica e Sintaxe:** Padronização correta de atributos de listas ordenadas/não ordenadas, tabelas e mídias locais e via *iframe*.
 
 <p align="center">
-  <img src="readme/sobre_html_v1.0_1.png" width="45%" alt="Versão 2.0" />
-  <img src="readme/sobre_html_v1.0_2.png" width="45%" alt="Versão 2.0" />
+  <img src="readme/sobre_html_v2.0_1.png" width="45%" alt="Versão 2.0" />
+  <img src="readme/sobre_html_v2.0_2.png" width="45%" alt="Versão 2.0" />
 </p>
 
 ---
